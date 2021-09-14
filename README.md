@@ -21,36 +21,55 @@ Consiste em uma agenda telefônica para registro de contatos, com nome, telefone
 - Cadastrar novo contato
 - Buscar por contato
 - Listar todos os contatos
-- Enviar email para determinado contato
+- Enviar email para determinado contato (Funcionalidade não completamente implementada)
 
 ## Screenshots
 
-Adicione 2 ou mais screenshots do projeto em termos de interface e/ou funcionamento.
+<p align="center">
+<img alt="" title="" src="imagens/screenshot/unknown1.png" width="200px" Height="240px">
+<img alt="" title="" src="imagens/screenshot/unknown2.png" width="200px" Height="240px">
+<img alt="" title="" src="imagens/screenshot/unknown3.png" width="200px" Height="240px">
+</p>
+
+![showcase](imagens/screenshot/unknown.png)
 
 ## Instalação
 
 **Linguagens**: Haskell<br>
 **Tecnologias**: Cabal<br>
-Para instalar as dependências é necessário ter o cabal instalado, caso contrário, siga o tutorial [aqui](https://cabal.readthedocs.io/en/3.4/getting-started.html).
 
-Para verificar se o cabal foi instalado rode o comando:
+## Instalação 
 
-```
-cabal --version
-```
+De modo a agilizar a instalação do Cabal recomendamos o uso do ```ghcup```, que já instala o ```ghc``` e ```cabal```.
+Para instalar usando o ```curl``` execute no terminal o seguinte comando:
+
+```curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh```
+
+Em seguida para instalar o ```cabal-install``` rode o comando:
+
+```ghcup install cabal && cabal-update```
+
+Essa instalação permite o uso dos comandos cabal new-* que servem para instalar as dependências sem a necessidade de instalar localmente. 
+
+## Execução
+
+Após as instalações necessárias para rodar o projeto execute o seguinte comando na raiz do projeto:
+
+```cabal run```
 
 ## Uso
 
 Seguir as intruções do menu.
 
 ## Vídeo
+Um vídeo foi gravado demonstrando algumas partes do projeto pelos membros do grupo, o mesmo pode ser assistido abaixo:
 
-Adicione 1 ou mais vídeos com a execução do projeto.
+[![Vídeo do projeto](https://img.youtube.com/vi/NCiFX79jX50/0.jpg)](https://www.youtube.com/watch?v=NCiFX79jX50)
 
 ## Outros
 
-O programa não funcionará corretamente caso o nome dos arquivos e/ou o local deles sejam alterados.
+O programa não funcionará corretamente caso o nome dos arquivos e/ou o local deles sejam alterados, ou caso as instruções de instalação não sejam seguidas. A funcionalidade de e-mail como apontada no vídeo foi inserida de forma hard-coded, não houve implementação parametrizada.
 
 ## Fontes
 
-Caso utilize materiais de terceiros, referencie-os adequadamente.
+[Hackage!](https://hackage.haskell.org)</br>
